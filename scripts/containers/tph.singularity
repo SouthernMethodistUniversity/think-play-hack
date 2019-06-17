@@ -1,0 +1,68 @@
+Bootstrap: docker
+From: ubuntu:18.04
+
+%setup
+cp reddit_import.sh ${SINGULARITY_ROOTFS}/bin/
+chmod a+x ${SINGULARITY_ROOTFS}/bin/reddit_import.sh
+ln -s /nfsscratch/tph_myth/data_sets/reddit_process.sh ${SINGULARITY_ROOTFS}/reddit_process.sh
+
+%post
+export DEBIAN_FRONTEND=noninteractive
+apt update
+apt -y upgrade
+apt -y install curl ca-certificates gnupg2 firefox wget build-essential gfortran-7 libssl-dev libeigen3-dev libarmadillo-dev libxml2-dev locales tzdata libpoppler-cpp-dev gdebi-core python3-pip systemd libdb5.3-dev libdb5.3++-dev
+export BERKELEYDB_DIR=/usr
+ln -fs /usr/share/zoneinfo/America/Chicago /etc/localtime
+dpkg-reconfigure --frontend noninteractive tzdata
+locale-gen en_US.UTF-8
+localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
+curl https://www.postgresql.org/media/keys/ACCC4CF8.asc | apt-key add -
+echo "deb http://apt.postgresql.org/pub/repos/apt/ bionic-pgdg main" > /etc/apt/sources.list.d/pgdg.list
+apt update
+pip3 install intel-scipy pandas lxml spacy beautifulsoup4 SQLAlchemy requests contextlib2 dask matplotlib plotly seaborn ggplot jupyter urlextract
+apt -y install postgresql-11 pgadmin4
+wget https://mran.blob.core.windows.net/install/mro/3.5.3/ubuntu/microsoft-r-open-3.5.3.tar.gz
+tar -xf microsoft-r-open-3.5.3.tar.gz
+cd microsoft-r-open/
+bash install.sh -a -s
+cd ${SINGULARITY_ROOTFS}
+rm -rf microsoft-r-open*
+R -e 'install.packages("versions")'
+R -e 'library(versions); install.dates(c("beepr","bigstatsr","data.table","doParallel","dplyr","entropy","flock","foreach","ggplot2","ggrepel","gridExtra","gtable","gutenbergr","Hmisc","itertools","janeaustenr","lubridate","MASS","philentropy","RColorBrewer","readxl","reshape2","scales","snow","stringr","tibble","tidyr","tidytext","tidyverse","viridis","wordcloud","rstan","rcarbon","devtools","pdftools","ngram","spacyr","gutenbergr"), "2019-06-01")'
+wget https://download2.rstudio.org/server/bionic/amd64/rstudio-server-1.2.1335-amd64.deb
+gdebi -n rstudio-server-1.2.1335-amd64.deb
+rm rstudio-server-1.2.1335-amd64.deb
+
+%environment
+export PATH="/usr/lib/postgresql/11/bin:${PATH}"
+export PGDATA="/nfsscratch/tph_myth/databases"
+export LANG="en_US.utf8"
+export LC_COLLATE="en_US.UTF-8"
+export LC_CTYPE="en_US.UTF-8"
+export LC_MESSAGES="en_US.UTF-8"
+export LC_MONETARY="en_US.UTF-8"
+export LC_NUMERIC="en_US.UTF-8"
+export LC_TIME="en_US.UTF-8"
+export LC_ALL="en_US.UTF-8"
+
+%apprun reddit_import
+exec reddit_import.sh
+
+%apprun reddit_process
+exec reddit_process.sh
+
+%apprun r
+R "$@"
+
+%apprun rscript
+Rscript "$@"
+
+%apprun rstudio
+rstudio-server "$@"
+
+%apprun python3
+python3 "$@"
+
+%apprun jupyter
+jupyter "$@"
+
