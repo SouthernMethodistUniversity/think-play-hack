@@ -1,0 +1,7 @@
+Bootstrap: docker
+From: jupyter/datascience-notebook
+
+%environment
+unset XDG_RUNTIME_DIR
+unset HOME
+
