@@ -1,5 +1,5 @@
 Bootstrap: docker
-From: jupyter/datascience-notebook
+From: rkalescky/tph:latest
 
 %environment
 unset XDG_RUNTIME_DIR
