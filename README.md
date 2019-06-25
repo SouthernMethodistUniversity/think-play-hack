@@ -6,7 +6,7 @@
 
 ## Docker
 
-#. Install Docker
-#. JupyterHub docker run -it -p 8888:8888 -v $HOME:/home/jovyan/work rkalescky/tph:latest
+1. Install Docker
+2. JupyterHub docker run -it -p 8888:8888 -v $HOME:/home/jovyan/work rkalescky/tph:latest
 
 
