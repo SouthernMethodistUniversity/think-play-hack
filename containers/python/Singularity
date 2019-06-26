@@ -1,5 +1,5 @@
 Bootstrap: docker
-From: rkalescky/tph:latest
+From: thinkplayhack/python:latest
 
 %environment
 unset XDG_RUNTIME_DIR

@@ -2,11 +2,23 @@
 
 [Preparatory Readings](https://www.dropbox.com/sh/ru4dxh6rr6uqvfl/AADlPVWVEZ1BE4OcxPnZ0dpDa?dl=0)
 
-# Containers
+# Software
 
-## Docker
+We have ready-to-go software stacks for Python with Jupyter and R with RStudio.
 
-1. Install Docker
-2. JupyterHub docker run -it -p 8888:8888 -v $HOME:/home/jovyan/work rkalescky/tph:latest
+### Windows
 
+1. [Install Docker](https://www.docker.com/products/docker-desktop)
+
+### macOS
+
+1. [Install Docker](https://www.docker.com/products/docker-desktop)
+
+### Linux
+
+1. 
+
+### SMU ManeFrame II (M2)
+
+1. Get M2 account credentials from Robert Kalescky.
 
