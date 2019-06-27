@@ -16,5 +16,5 @@ exec reddit_import.sh
 exec reddit_process.sh
 
 %apprun rserver
-exec rserver
+exec rserver "$@"
 
