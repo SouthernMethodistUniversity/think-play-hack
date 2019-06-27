@@ -26,8 +26,12 @@ We have ready-to-go software stacks for Python with Jupyter and R with RStudio.
 
 ## SMU ManeFrame II (M2)
 
-1. Get M2 account credentials from Robert Kalescky.
-2. [Login into M2 via operating system specific instructions](http://faculty.smu.edu/csc/documentation/access.html)
+* Those with an SMU account on M2
+    1. [Login into M2 via operating system specific instructions](http://faculty.smu.edu/csc/documentation/access.html)
+    2. On M2 run: `export MODULEPATH="${MODULEPATH}:/hpc/modules/tph" && module --ignore-cache load python_jupyter r_rstudio`
+* Those without an SMU account on M2
+    1. Get M2 account credentials from Robert Kalescky.
+    2. [Login into M2 via operating system specific instructions](http://faculty.smu.edu/csc/documentation/access.html)
 
 ## R with RStudio
 
