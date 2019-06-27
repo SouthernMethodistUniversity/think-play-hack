@@ -12,8 +12,8 @@ We have ready-to-go software stacks for Python with Jupyter and R with RStudio.
 
 1. [Install Docker](https://download.docker.com/win/stable/Docker%20for%20Windows%20Installer.exe) Note: During the installation *don't* check the "Use Windows containers..." box.
 2. Run Docker Desktop. (You may get a message about Hyper-V and Containers that will require a reboot, press "Ok" and wait for the reboot.)
-2. `docker run --rm -p 127.0.0.1:8787:8787 -v ${HOME}:/home/rstudio -e DISABLE_AUTH=true thinkplayhack/r_rstudio:latest`
-3. Go to [127.0.0.1:8787](http://127.0.0.1:8787) in a web browser
+3. `docker run --rm -p 127.0.0.1:8787:8787 -v ${HOME}:/home/rstudio -e DISABLE_AUTH=true thinkplayhack/r_rstudio:latest`
+4. Go to [127.0.0.1:8787](http://127.0.0.1:8787) in a web browser
 
 ### macOS
 
@@ -31,6 +31,29 @@ We have ready-to-go software stacks for Python with Jupyter and R with RStudio.
 
 1. Get M2 account credentials from Robert Kalescky.
 2. [Login into M2 via operating system specific instructions](http://faculty.smu.edu/csc/documentation/access.html)
+3. Run `srun -p tph -c 1 --mem=6G m2_rstudio` and follow the port forwarding instructions that will be given.
 
 ## Python with Jupyter
+
+### Windows
+
+1. [Install Docker](https://download.docker.com/win/stable/Docker%20for%20Windows%20Installer.exe) Note: During the installation *don't* check the "Use Windows containers..." box.
+2. Run Docker Desktop. (You may get a message about Hyper-V and Containers that will require a reboot, press "Ok" and wait for the reboot.)
+3. `docker run --rm -p 127.0.0.1:8888:8888 -v ${HOME}:/home/jovyan thinkplayhack/python_jupyter:latest`
+
+### macOS
+
+1. [Install Docker](https://download.docker.com/mac/stable/Docker.dmg)
+2. `docker run --rm -p 127.0.0.1:8888:8888 -v ${HOME}:/home/jovyan thinkplayhack/python_jupyter:latest`
+
+### Linux
+
+1. [Install Docker](https://docs.docker.com/install/) via distribution specifc instructions
+2. `docker run --rm -p 127.0.0.1:8888:8888 -v ${HOME}:/home/jovyan thinkplayhack/python_jupyter:latest`
+
+### SMU ManeFrame II (M2)
+
+1. Get M2 account credentials from Robert Kalescky.
+2. [Login into M2 via operating system specific instructions](http://faculty.smu.edu/csc/documentation/access.html)
+3. Run `srun -p tph -c 1 --mem=6G m2_jupyter_notebook` and follow the port forwarding instructions that will be given.
 
