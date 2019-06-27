@@ -15,3 +15,6 @@ exec reddit_import.sh
 %apprun reddit_process
 exec reddit_process.sh
 
+%apprun rserver
+exec rserver
+
