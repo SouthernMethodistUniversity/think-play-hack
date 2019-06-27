@@ -6,6 +6,9 @@ cp reddit_import.sh ${SINGULARITY_ROOTFS}/bin/
 chmod a+x ${SINGULARITY_ROOTFS}/bin/reddit_import.sh
 ln -s /nfsscratch/tph_myth/data_sets/reddit_process.sh ${SINGULARITY_ROOTFS}/bin/reddit_process.sh
 
+%post
+sed -e "/listen_addresses/c\listen_addresses = '*'" /etc/postgresql/11/main/postgresql.conf
+
 %apprun reddit_import
 exec reddit_import.sh
 
