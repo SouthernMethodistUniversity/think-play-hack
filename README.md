@@ -43,21 +43,21 @@ We have ready-to-go software stacks for Python with Jupyter and R with RStudio.
 
 ### SMU ManeFrame II (M2)
 
-1. Run `srun -p tph -c 1 --mem=6G m2_rstudio` and follow the port forwarding instructions that will be given.
+1. On M2 run: `srun -p tph -c 1 --mem=6G m2_rstudio` and follow the port forwarding instructions that will be given.
 
 ## Python with Jupyter
 
 ### Windows
 
 1. In Windows PowerShell run: `docker run --rm -p 127.0.0.1:8888:8888 -v ${HOME}:/home/jovyan thinkplayhack/python_jupyter:latest`.
-2. Go to [127.0.0.1:8888](127.0.0.1:8888) in a web browser.
+2. Go to [127.0.0.1:8888](http://127.0.0.1:8888) in a web browser.
 
 ### macOS & Linux
 
 1. In Terminal run: `docker run --rm -p 127.0.0.1:8888:8888 -v ${HOME}:/home/jovyan thinkplayhack/python_jupyter:latest`.
-2. Go to [127.0.0.1:8888](127.0.0.1:8888) in a web browser.
+2. Go to [127.0.0.1:8888](http://127.0.0.1:8888) in a web browser.
 
 ### SMU ManeFrame II (M2)
 
-1. Run `srun -p tph -c 1 --mem=6G m2_jupyter_notebook` and follow the port forwarding instructions that will be given.
+1. On M2 run: `srun -p tph -c 1 --mem=6G m2_jupyter_notebook` and follow the port forwarding instructions that will be given.
 
