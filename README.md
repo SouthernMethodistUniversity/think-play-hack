@@ -6,7 +6,9 @@
 
 We have ready-to-go software stacks for Python with Jupyter and R with RStudio.
 
-## [Docker Setup for Personal Machines](docs/DOCKER.md)
+## [Docker Setup for Personal Machines](docs/docker.md)
+
+## [ManeFrame II (M2)](docs/m2.md)
 
 # [Data on Box](https://smu.box.com/s/2exvlyqgiouhbrghytzwxr5l25ybmx2b)
 
