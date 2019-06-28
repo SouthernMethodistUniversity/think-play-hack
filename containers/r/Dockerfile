@@ -8,3 +8,5 @@ RUN apt-get update \
  && apt-get update \
  && apt-get install -y --no-install-recommends postgresql-11 pgadmin4
 
+ENV PATH="/usr/lib/postgresql/11/bin:${PATH}"
+
