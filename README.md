@@ -6,6 +6,7 @@
 
 We have ready-to-go software stacks for Python with Jupyter and R with RStudio.
 
-## [Docker Setup](docs/DOCKER.md)
+
+## [Docker Setup for Personal Machines](docs/DOCKER.md)
 
 
