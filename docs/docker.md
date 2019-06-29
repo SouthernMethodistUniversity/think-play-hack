@@ -22,23 +22,23 @@
 
 ### Windows
 
-1. In Windows PowerShell run: `docker run --rm -p 127.0.0.1:8787:8787 -v ${HOME}:/home/rstudio -e DISABLE_AUTH=true thinkplayhack/r_rstudio:latest` .
+1. In Windows PowerShell run: `docker run --name tph --rm -p 127.0.0.1:8787:8787 -v ${HOME}:/home/rstudio -e DISABLE_AUTH=true thinkplayhack/r_rstudio:latest` .
 2. Go to [127.0.0.1:8787](http://127.0.0.1:8787) in a web browser.
 
 ### macOS & Linux
 
-1. In Terminal run: `docker run --rm -p 127.0.0.1:8787:8787 -v ${HOME}:/home/rstudio -e DISABLE_AUTH=true thinkplayhack/r_rstudio:latest`.
+1. In Terminal run: `docker run --name tph --rm -p 127.0.0.1:8787:8787 -v ${HOME}:/home/rstudio -e DISABLE_AUTH=true thinkplayhack/r_rstudio:latest`.
 2. Go to [127.0.0.1:8787](http://127.0.0.1:8787) in a web browser.
 
 ## Python with Jupyter
 
 ### Windows
 
-1. In Windows PowerShell run: `docker run --rm -p 127.0.0.1:8888:8888 -v ${HOME}:/home/jovyan thinkplayhack/python_jupyter:latest`.
+1. In Windows PowerShell run: `docker run --name tph --rm -p 127.0.0.1:8888:8888 -v ${HOME}:/home/jovyan thinkplayhack/python_jupyter:latest`.
 2. Go to [127.0.0.1:8888](http://127.0.0.1:8888) in a web browser.
 
 ### macOS & Linux
 
-1. In Terminal run: `docker run --rm -p 127.0.0.1:8888:8888 -v ${HOME}:/home/jovyan thinkplayhack/python_jupyter:latest`.
+1. In Terminal run: `docker run --name tph --rm -p 127.0.0.1:8888:8888 -v ${HOME}:/home/jovyan thinkplayhack/python_jupyter:latest`.
 2. Go to [127.0.0.1:8888](http://127.0.0.1:8888) in a web browser.
 
