@@ -32,6 +32,9 @@ We have provided two images: one that runs R and RStudio and one that runs Pytho
 
 We have provided access to all the data for the event on Box. Given the size, consider what you might want to work on prior to downloading it. Should you have trouble, we have flash drives and hard drives with the data stored locally as well.
 
+## [Reddit](reddit.md)
+We have over 1 TB of reddit data available in a database. You can [get subsets of this data](reddit.md) for analysis.
+
 ## Think Prompts
 
 In case you are having trouble getting started:
