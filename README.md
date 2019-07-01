@@ -28,12 +28,14 @@ We have provided two images: one that runs R and RStudio and one that runs Pytho
 
 [ManeFrame II (M2)](http://faculty.smu.edu/csc/documentation/about.html) is SMU's high performance computing (HPC) cluster. M2 features 11,000 cores, 60 NVIDIA V100 and P100 GPU accelerators, and 256 GB, 768 GB, and 1.5 TB memory configurations per node. Guest accounts on the cluster can be requested [here](https://smu.az1.qualtrics.com/jfe/form/SV_2i6o7BztWg52rK5).
 
-## [Data on Box](https://smu.box.com/s/2exvlyqgiouhbrghytzwxr5l25ybmx2b)
+## Data
+
+### [Data on Box](https://smu.box.com/s/2exvlyqgiouhbrghytzwxr5l25ybmx2b)
 
 We have provided access to all the data for the event on Box. Given the size, consider what you might want to work on prior to downloading it. Should you have trouble, we have flash drives and hard drives with the data stored locally as well.
 
-## [Reddit](reddit.md)
-We have over 1 TB of reddit data available in a database. You can [get subsets of this data](reddit.md) for analysis.
+### [Reddit](docs/reddit.md)
+We have over 1 TB of reddit data available in a database. You can [get subsets of this data](docs/reddit.md) for analysis.
 
 ## Think Prompts
 
