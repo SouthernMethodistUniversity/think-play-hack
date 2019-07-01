@@ -18,6 +18,10 @@
 1. [Install Docker](https://docs.docker.com/install/) via distribution specifc instructions.
 2. Run Terminal and the application instructions below.
 
+### Note About Initial Download of the Images
+
+The intial run of the image will also download the latest copy of the image to your machine. We have copies of the images locally and can assist with their installation as this method will likely be much faster than downloading.
+
 ## R with RStudio
 
 ### Windows
