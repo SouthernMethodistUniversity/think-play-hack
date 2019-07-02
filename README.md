@@ -4,6 +4,12 @@
 
 Dr. Guldi has compiled a list of readings to get your creative juices flowing. You can find them [here](https://www.dropbox.com/sh/ru4dxh6rr6uqvfl/AADlPVWVEZ1BE4OcxPnZ0dpDa?dl=0).
 
+## Conference activities
+* [Wednesday hike](https://docs.google.com/document/d/1PdxiKuEQFj0KIQbHnvfthqG7gtBYNlN3QZavc5g1T9M/edit?usp=sharing)
+* [Thursday rafting trip](https://docs.google.com/document/d/1xDC_5mEJOZvfcWAvARDaLFl68Y44cDRh7jZJjpfUVKM/edit?usp=sharing)
+
+These two activities are here because they happen to be more technically complex. There are other opportunities that are being informally discussed.
+
 ## [Slack Instructions](https://get.slack.help/hc/en-us/articles/212675257)
 
 You likely recieved an invitation to our Slack channel. This will be a good way to communicate with people at the conference and ask the Data Team questions if you need to. If you did not get an invite, just ask and we can send you one.
