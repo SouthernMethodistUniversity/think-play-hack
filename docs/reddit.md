@@ -72,7 +72,7 @@ Determine which subreddits you want to edit. The dataset has almost 240,000 subr
 
 Once you know your subreddits, build a `WHERE` clause to filter by them. First, create a comma-separated list of subreddits you want to get, like this:
 ```SQL
-subreddit IN ("BoyScoutsofAmerica","cubscouts","EagleScout","EagleScouts","Eagle_Scouts","EagleScoutsOnReddit")
+subreddit IN ('BoyScoutsofAmerica','cubscouts','EagleScout','EagleScouts','Eagle_Scouts','EagleScoutsOnReddit')
 ```
 Important notes:
 * Keep capitalization, punctuation, all other details the same. Differences will prevent that subreddit from appearing.
