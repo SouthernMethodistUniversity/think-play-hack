@@ -36,7 +36,7 @@ We have provided two images: one that runs R and RStudio and one that runs Pytho
 
 ## Data
 
-### [Data on Box](https://smu.box.com/s/2exvlyqgiouhbrghytzwxr5l25ybmx2b)
+### [Data on Box](https://smu.box.com/s/lk8mqfbgjproqda5jmlbynnbjclvybar)
 
 We have provided access to all the data for the event on Box. Given the size, consider what you might want to work on prior to downloading it. Should you have trouble, we have flash drives and hard drives with the data stored locally as well.
 
